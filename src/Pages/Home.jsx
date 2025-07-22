@@ -2,7 +2,7 @@ import React from 'react';
 import Footer from './Footer';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMicrophone, faVideoCamera, faDesktop, faSmile, faMessage, faGear, faArrowCircleLeft, faArrowCircleRight } from '@fortawesome/free-solid-svg-icons';
-import Accordion from './Accordion/accordion';
+import Accordion from './accordion/Accordion.jsx'; // Corrected import path
 
 const Home = () => {
   return (
@@ -24,17 +24,17 @@ const Home = () => {
               Start your free trial
             </button>
             <div className="flex flex-row gap-3 justify-center items-center">
-              <img src="images/Frame 10.svg" alt="AI assistant icon" className="w-5 h-5" />
+              <img src="/images/Frame 10.svg" alt="AI assistant icon" className="w-5 h-5" />
               <p className="text-blue-500 cursor-pointer">
                 Discover AI assistant
               </p>
             </div>
           </div>
           <div className="flex gap-4 pt-10">
-            <img src="images/Avatars.svg" alt="User avatars" />
+            <img src="/images/Avatars.svg" alt="User avatars" />
             <div>
               <div className="flex flex-row items-center gap-2">
-                <img src="images/Stars.svg" alt="5 stars rating" />
+                <img src="/images/Stars.svg" alt="5 stars rating" />
                 <span>5.0</span>
               </div>
               <p> from 3,000+ reviews </p>
@@ -46,12 +46,12 @@ const Home = () => {
         <div className="w-full md:w-1/2 mt-10 md:mt-0 flex justify-center">
           <div className="bg-blue-50 p-5 rounded-xl shadow-lg border-2 border-blue-100">
             <div className="grid grid-rows-2 grid-flow-col gap-5">
-              <div className="bg-orange-400 p-2 rounded-lg"><img src="images/image 21.svg" alt="gallery image 1" className="w-24 h-24 sm:w-28 sm:h-28" /></div>
-              <div className="bg-blue-300 p-2 rounded-lg"><img src="images/image 72.svg" alt="gallery image 2" className="w-24 h-24 sm:w-28 sm:h-28" /></div>
-              <div className="bg-purple-400 p-2 rounded-lg"><img src="images/image 100.svg" alt="gallery image 3" className="w-24 h-24 sm:w-28 sm:h-28" /></div>
-              <div className="bg-yellow-200 p-2 rounded-lg"><img src="images/image 108.svg" alt="gallery image 4" className="w-24 h-24 sm:w-28 sm:h-28" /></div>
-              <div className="bg-green-400 p-2 rounded-lg"><img src="images/image 8.svg" alt="gallery image 5" className="w-24 h-24 sm:w-28 sm:h-28" /></div>
-              <div className="bg-orange-200 p-2 rounded-lg"><img src="images/image 103.svg" alt="gallery image 6" className="w-24 h-24 sm:w-28 sm:h-28" /></div>
+              <div className="bg-orange-400 p-2 rounded-lg"><img src="/images/image 21.svg" alt="gallery image 1" className="w-24 h-24 sm:w-28 sm:h-28" /></div>
+              <div className="bg-blue-300 p-2 rounded-lg"><img src="/images/image 72.svg" alt="gallery image 2" className="w-24 h-24 sm:w-28 sm:h-28" /></div>
+              <div className="bg-purple-400 p-2 rounded-lg"><img src="/images/image 100.svg" alt="gallery image 3" className="w-24 h-24 sm:w-28 sm:h-28" /></div>
+              <div className="bg-yellow-200 p-2 rounded-lg"><img src="/images/image 108.svg" alt="gallery image 4" className="w-24 h-24 sm:w-28 sm:h-28" /></div>
+              <div className="bg-green-400 p-2 rounded-lg"><img src="/images/image 8.svg" alt="gallery image 5" className="w-24 h-24 sm:w-28 sm:h-28" /></div>
+              <div className="bg-orange-200 p-2 rounded-lg"><img src="/images/image 103.svg" alt="gallery image 6" className="w-24 h-24 sm:w-28 sm:h-28" /></div>
             </div>
             <div className="flex flex-row gap-4 pt-5 justify-center items-center text-blue-500">
               <div className="px-2 py-1 bg-white rounded-full border-2 border-blue-100"><FontAwesomeIcon icon={faMicrophone} /></div>
@@ -65,18 +65,18 @@ const Home = () => {
         </div>
       </section>
 
-    <section className="w-[90%] mx-auto">
+      <section className="w-[90%] mx-auto">
         <div className="pt-32 text-center">
           <p>
             Join 1,500+ companies already video conferencing the ClearLink way
           </p>
           <div className="flex flex-wrap gap-5 justify-center items-center w-[88%] mx-auto pt-10">
-            <img src="images/Shopify.com svg.svg" alt="shopify" className=" w-28" />
-            <img src="images/Coinbase svg.svg" alt="coinbase" className=" w-28" />
-            <img src="images/Dropbox svg.svg" alt="dropbox" className=" w-28" />
-            <img src="images/Intercom svg.svg" alt="intercom" className=" w-28" />
-            <img src="images/Marvel svg.svg" alt="marvel" className=" w-28" />
-            <img src="images/Automattic svg.svg" alt="automattic" className=" w-28" />
+            <img src="/images/Shopify.com svg.svg" alt="shopify" className=" w-28" />
+            <img src="/images/Coinbase svg.svg" alt="coinbase" className=" w-28" />
+            <img src="/images/Dropbox svg.svg" alt="dropbox" className=" w-28" />
+            <img src="/images/Intercom svg.svg" alt="intercom" className=" w-28" />
+            <img src="/images/Marvel svg.svg" alt="marvel" className=" w-28" />
+            <img src="/images/Automattic svg.svg" alt="automattic" className=" w-28" />
           </div>
         </div>
       </section>
@@ -97,7 +97,7 @@ const Home = () => {
                 </p>
             </div>
             <img
-                src="images/Hand-drawn arrow.svg"
+                src="/images/Hand-drawn arrow.svg"
                 alt="arrow"
                 className="translate-y-5 self-end hidden md:block"
             />
@@ -107,7 +107,7 @@ const Home = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-10 lg:w-3/5">
               <div className="text-start ">
                 <div className="p-3 w-10 bg-slate-50 rounded-full">
-                  <img src="images/Icon (1).svg" alt="video-icon" />
+                  <img src="/images/Icon (1).svg" alt="video-icon" />
                 </div>
                 <h2 className="text-2xl font-medium pt-3 pb-3">
                   Crystal-clear HD Video
@@ -121,7 +121,7 @@ const Home = () => {
 
               <div className="text-start">
                 <div className="p-3 w-10 bg-slate-50 rounded-full">
-                  <img src="images/recording-01.svg" alt="video-icon" />
+                  <img src="/images/recording-01.svg" alt="video-icon" />
                 </div>
                 <h2 className="text-2xl font-medium pt-3 pb-3">
                   Noise cancelling audio
@@ -135,7 +135,7 @@ const Home = () => {
           
               <div className="text-start">
                 <div className="p-3 w-10 bg-slate-50 rounded-full">
-                  <img src="images/calendar.svg" alt="video-icon" />
+                  <img src="/images/calendar.svg" alt="video-icon" />
                 </div>
                 <h2 className="text-2xl font-medium pt-3 pb-3">
                   Scheduling Made Easy
@@ -150,7 +150,7 @@ const Home = () => {
 
               <div className="text-start">
                 <div className="p-3 w-10 bg-slate-50 rounded-full">
-                  <img src="images/lock-unlocked-04.svg" alt="video-icon" />
+                  <img src="/images/lock-unlocked-04.svg" alt="video-icon" />
                 </div>
                 <h2 className="text-2xl font-medium pt-3 pb-3 ">
                   Bank-grade security
@@ -165,7 +165,7 @@ const Home = () => {
           </div>
           <div className='flex justify-center items-center mt-10 lg:mt-0'>
             <img
-              src="images/Rectangle 1.svg"
+              src="/images/Rectangle 1.svg"
               alt="people-image"
               className="w-full max-w-md"
             />
@@ -177,8 +177,8 @@ const Home = () => {
       <section className="bg-slate-100 flex flex-col lg:flex-row justify-around items-center pt-20 pb-20 px-4 sm:px-10 gap-16 mt-24">
         <div className='lg:w-1/2'>
           <div>
-            <img src="images/Shopify.com svg.svg" alt="shopify-image" />
-            <img src="images/Stars.svg" alt="ratings" className="pt-10" />
+            <img src="/images/Shopify.com svg.svg" alt="shopify-image" />
+            <img src="/images/Stars.svg" alt="ratings" className="pt-10" />
             <h1 className="text-3xl md:text-4xl text-start pt-10 font-medium">
               ClearLink has upgraded our
               remote meetings. High-quality
@@ -188,7 +188,7 @@ const Home = () => {
           </div>
           <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between pt-10 sm:pt-20 gap-6">
             <div className="flex gap-4 items-center">
-              <img src="images/Avatar.svg" alt="Sarah Thompson's avatar" />
+              <img src="/images/Avatar.svg" alt="Sarah Thompson's avatar" />
               <div className="text-start">
                 <p className='font-semibold'>Sarah Thompson</p>
                 <span>Product Manager, Shopify</span>
@@ -209,13 +209,13 @@ const Home = () => {
         {/* Images section - RESTORED */}
         <div className="flex flex-col gap-3 justify-center items-center mt-10 lg:mt-0">
           <div className="flex flex-row gap-3 items-center justify-center">
-            <img src="images/Image.svg" alt="image" className="translate-y-10" />
-            <img src="images/Image (4).svg" alt="image" />
+            <img src="/images/Image.svg" alt="image" className="translate-y-10" />
+            <img src="/images/Image (4).svg" alt="image" />
           </div>
           <div className="flex flex-row gap-3">
-            <img src="images/Image (2).svg" alt="image" className="-translate-y-14" />
-            <img src="images/Image (1).svg" alt="image" />
-            <img src="images/Image (3).svg" alt="image" className="-translate-y-14" />
+            <img src="/images/Image (2).svg" alt="image" className="-translate-y-14" />
+            <img src="/images/Image (1).svg" alt="image" />
+            <img src="/images/Image (3).svg" alt="image" className="-translate-y-14" />
           </div>
         </div>
       </section>
@@ -246,19 +246,19 @@ const Home = () => {
             </h1>
             <div className='grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-4 mt-8 mb-8'>
                 <div className="flex gap-3 items-center">
-                    <img src="images/Check icon.svg" alt="Check mark"/>
+                    <img src="/images/Check icon.svg" alt="Check mark"/>
                     <p className="text-xl">30 days free trial</p>
                 </div>
                 <div className="flex gap-3 items-center">
-                    <img src="images/Check icon.svg" alt="Check mark"/>
+                    <img src="/images/Check icon.svg" alt="Check mark"/>
                     <p className="text-xl">Cancel at any time</p>
                 </div>
                 <div className="flex gap-3 items-center">
-                    <img src="images/Check icon.svg" alt="Check mark"/>
+                    <img src="/images/Check icon.svg" alt="Check mark"/>
                     <p className="text-xl">Access to all features</p>
                 </div>
                 <div className="flex gap-3 items-center">
-                    <img src="images/Check icon.svg" alt="Check mark"/>
+                    <img src="/images/Check icon.svg" alt="Check mark"/>
                     <p className="text-xl">Personalized onboading</p>
                 </div>
             </div>
@@ -274,7 +274,7 @@ const Home = () => {
           </div>
           <div className='lg:w-1/2 flex justify-center mt-10 lg:mt-0'>
             <img
-              src="images/Screen mockup (REPLACE FILL).svg"
+              src="/images/Screen mockup (REPLACE FILL).svg"
               alt="screen-image"
               className="w-full max-w-xl border-4 border-black rounded-tl-2xl"
             />

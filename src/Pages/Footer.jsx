@@ -83,7 +83,7 @@ const Footer = () => {
               <div className="flex flex-col sm:flex-row md:flex-col gap-3">
                 <a href="#" aria-label="Download on the App Store">
                     <img
-                        src="images/Mobile app store badge.svg"
+                        src="/images/Mobile app store badge.svg"
                         alt="App Store"
                         className="h-10 w-auto rounded-md shadow-sm hover:opacity-90 transition-opacity"
                         onError={(e) => { e.target.onerror = null; e.target.src="https://placehold.co/135x40/cccccc/000000?text=App+Store+Error"; }}
@@ -91,7 +91,7 @@ const Footer = () => {
                 </a>
                 <a href="#" aria-label="Get it on Google Play">
                     <img
-                        src="images/Mobile app store badge (1).svg"
+                        src="/images/Mobile app store badge (1).svg"
                         alt="Google Play"
                         className="h-10 w-auto rounded-md shadow-sm hover:opacity-90 transition-opacity"
                         onError={(e) => { e.target.onerror = null; e.target.src="https://placehold.co/135x40/cccccc/000000?text=Play+Store+Error"; }}

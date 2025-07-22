@@ -1,4 +1,4 @@
-import React, { useState } from 'react'; // Import useState
+import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronDown, faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
 import { Link } from 'react-router-dom';
@@ -9,7 +9,7 @@ const Header = () => {
   return (
     <div className="flex flex-row justify-between items-center bg-slate-200 px-5 py-2 rounded-3xl w-[95%] mx-auto mt-12">
       <div className="flex flex-row gap-3 items-center">
-        <img src="images/Group.svg" alt="comapny-logo" className="w-7 h-8" />
+        <img src="/images/Group.svg" alt="comapny-logo" className="w-7 h-8" />
         <h1 className="font-semibold">
           ClearLink<span className="text-blue-500">.</span>
         </h1>
